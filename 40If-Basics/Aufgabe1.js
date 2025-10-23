@@ -1,4 +1,6 @@
-let a = 5
+let a = -3
+
+
 
 
 //a > 10  positiv
