@@ -9,6 +9,6 @@ console.log ("the result of" + " " + " 17.4 divided by 3.9 " + " " + "is" + " " 
 let firstname = "Kilian"
 let lastname = "Falch"
 
-console.log ("Ich hei0e" + " " + firstname + " " + lastname);
+console.log ("Ich heiße" + " " + firstname + " " + lastname);
 
 
