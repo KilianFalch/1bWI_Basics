@@ -7,7 +7,7 @@ for (let index = 0; index < arr.length; index++) {
     sum = sum += arr[index];
 }
 
-console.log(sum);
+console.log("The sum is" + " " + sum);
 
 
 
