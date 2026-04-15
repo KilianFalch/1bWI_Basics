@@ -1,19 +1,29 @@
-/*ELEMENT Selektor*/
-div {
-  background-color: aquamarine;
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 
-/*id selektor*/
-#header {
-  font-size: 2rem;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  padding: 20px;
+}
+.logo {
+  position: absolute;
+  right: 50%;
+  color: white;
 }
 
-/* Klassenselector */
-
-.subtitle {
-  color: blue;
+.menu li {
+  display: inline-block;
+  padding-left: 50px;
+}
+.right li {
+  display: inline-block;
+  padding-right: 40px;
 }
 
-#text p {
-  background-color: blueviolet;
-}
