@@ -20,10 +20,21 @@
 
 .menu li {
   display: inline-block;
-  padding-left: 50px;
+  padding-left: 60px;
 }
-.right li {
+.right li{
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 95px;
+  padding-top: 7%;
+}
+.icon{
+   height: 20px;
+  width: 50px;
+  filter: brightness(0) invert(1);
+}
+.signin{
+  position: relative;
+  left: 85%;
+  bottom: 30px;
 }
 
