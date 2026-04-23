@@ -24,8 +24,10 @@
 }
 .right li{
   display: inline-block;
-  padding-right: 95px;
-  padding-top: 7%;
+  position: relative;
+  right: 70%;
+  padding-right: 8;
+ top: 20px;
 }
 .icon{
    height: 20px;
@@ -34,7 +36,15 @@
 }
 .signin{
   position: relative;
-  left: 85%;
-  bottom: 30px;
+  left: 40%;
+  bottom: 10px;
+}
+.body{
+  
+  display: flex;
+  justify-content: center;
+
+  height: 50vw;
+  color: black;
 }
 
