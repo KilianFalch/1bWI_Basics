@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
 }
+.background{
+  width: 100%;
+  height: 100%;
+  
+}
 
 .header {
   display: flex;
@@ -22,29 +27,51 @@
   display: inline-block;
   padding-left: 60px;
 }
-.right li{
+.right li {
   display: inline-block;
   position: relative;
   right: 70%;
   padding-right: 8;
- top: 20px;
+  top: 20px;
 }
-.icon{
-   height: 20px;
+.icon {
+  height: 20px;
   width: 50px;
   filter: brightness(0) invert(1);
 }
-.signin{
+.signin {
   position: relative;
   left: 40%;
   bottom: 10px;
+  padding-top: 2px;
 }
-.body{
-  
+.body {
+  display: flex;
+  margin: 0px;
+  margin-left: 100px;
+  margin-top: 150px;
+  color: black;
+  font-size: 50px;
+
+}.body1 {
+  display: flex;
+  margin: 0px;
+  margin-left: 100px;
+  margin-top: 35px;
+  color: black;
+  font-size: 20px;
+  width: 350px;
+}
+.offer {
   display: flex;
   justify-content: center;
-
-  height: 50vw;
-  color: black;
+  align-items: center;
+  margin: 0px;
+  margin-left: 100px;
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+  background-color: dodgerblue;
+  height: 50px;
+  width: 200px;
 }
-
