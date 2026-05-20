@@ -4,19 +4,22 @@
   margin: 0;
 }
 .wrapper {
-  position: relative;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
 
 .header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  width: 100%;
   height: 10vh;
   padding: 20px;
+  z-index: 10;
 }
 .logo {
   position: absolute;
@@ -47,23 +50,30 @@
   padding-top: 2px;
 }
 .body {
+  position: relative;
+  top: 20px;
   display: flex;
   margin: 0px;
   margin-left: 100px;
   margin-top: 150px;
-  color: black;
+  color: white;
   font-size: 50px;
+  z-index: 2;
 }
 .body1 {
+  position: relative;
+  top: 20px;
   display: flex;
   margin: 0px;
   margin-left: 100px;
   margin-top: 35px;
-  color: black;
+  color: white;
   font-size: 20px;
   width: 350px;
+  z-index: 2;
 }
 .offer {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,14 +85,41 @@
   background-color: dodgerblue;
   height: 50px;
   width: 200px;
+  z-index: 2;
 }
 
 .background {
-    background-image: url("https://www.mercedes-benz.at/content/dam/austria/passengercars/campaigns/taktik-q2-2026/Stage.jpg/1775558101146.jpg?im=Crop,rect=(1438,719,5250,5250);Resize=(800,800)");
-    position: absolute;
-    top: 7vw;
-    bottom: 0%;
-    height: 100vw;
-    width: 100%;
-    background-repeat: no-repeat;
+  background: url("https://www.mercedes-benz.at/content/dam/austria/passengercars/campaigns/taktik-q2-2026/Stage.jpg/1775558101146.jpg?im=Crop,rect=(1438,719,5250,5250);Resize=(800,800)");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  position: absolute;
+  height: calc(100vh - 10vh);
+  top: 10vh;
+  width: 100%;
+  z-index: 0;
+  overflow: visible;
 }
+
+.background::before,
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 12%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.background::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+}
+
+.background::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+}
+
