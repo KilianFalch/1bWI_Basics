@@ -1,0 +1,24 @@
+html{
+    background-color: red;
+}
+
+input{
+ 
+    padding: 10px;
+    width: 100%;
+
+}
+button{
+    padding: 10px;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+#output{
+    text-align: center;
+    height: 60px;
+
+}
